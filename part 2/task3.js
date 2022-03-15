@@ -1,0 +1,1 @@
+const seleksiNilai = (nilaiAwal, nilai)
