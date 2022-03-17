@@ -5,7 +5,7 @@ const searchString = (search, word) => {
         if (search.toLowerCase() === word.slice(i, i + search.length).toLowerCase()) {     // slice berdasarkan panjang search
             isFound = true;
             break;
-        }   
+        } 
     }
     return isFound;
 }
@@ -28,4 +28,4 @@ const searchName = (search, max, callback) => {
     }
     return find;
 }
-console.log(searchName('xin', 3, searchString))
+console.log(searchName("an", 3, searchString))

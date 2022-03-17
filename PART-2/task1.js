@@ -1,3 +1,6 @@
+// 10 methode (Built-in Function)
+// __________________________________________________________________________________________________________________________________________
+
 // 1. concat()
 // metode untuk menambahkan dua atau lebih string dan mengembalikan string tunggal baru
 // sintak => string.concat(string2, string3, ..., stringN);
@@ -7,8 +10,8 @@ let string1 = "Hallo!";
 let string2 = "Saya Erika";
 let string3 = "Saya belajar Javascript";
 let allString = string1.concat(" ", string2, ". ", string3, ".");
-console.log(allString);
-
+console.log(allString); // Output: Hallo! Saya Erika. Saya belajar Javascript.
+// __________________________________________________________________________________________________________________________________________
 
 // 2. toString()
 // Metode untuk mengubah nilai Array menjadi string
@@ -19,6 +22,7 @@ let abjad = ["a", "b", "c", "d"]
 let strAbjad = abjad.toString();
 console.log(abjad); // Output: [ 'a', 'b', 'c', 'd' ]
 console.log(strAbjad); // Output: a,b,c,d
+// __________________________________________________________________________________________________________________________________________
 
 // 3. join()
 // Metode untuk menggabungkan niai array dengan menambahkan separator (pemisah)
@@ -28,6 +32,7 @@ console.log(strAbjad); // Output: a,b,c,d
 let num = [1, 2, 3, 4, 5, 6, 7]
 let newNum = num.join(" and ");
 console.log(newNum) // Output: 1 and 2 and 3 and 4 and 5 and 6 and 7
+//  __________________________________________________________________________________________________________________________________________
 
 // 4. reverse()
 // Metode untuk membalikkan urutan (dari belakang ke depan) nilai array
@@ -36,6 +41,7 @@ console.log(newNum) // Output: 1 and 2 and 3 and 4 and 5 and 6 and 7
 let num1 = [11, 12, 13, 14, 15, 16, 17]
 let newNum1 = num1.reverse()
 console.log(newNum1) // Output: [17, 16, 15, 14, 13, 12, 11]
+// __________________________________________________________________________________________________________________________________________
 
 // 5. sort()
 // Metode untuk mengurutkan nilai array sesuai abjad atau meningkat
@@ -47,6 +53,7 @@ let newNumm = numm.sort().toString()
 let newFruits = fruits.sort().toString()
 console.log(newNumm) // Output: 0,1,2,2,3,3,4,4,5,6,7,7,8,9,9
 console.log(newFruits) // Output: apple,banana,grape,strowberry
+// __________________________________________________________________________________________________________________________________________
 
 // 6. splice()
 // Metode untuk menambahkan dan membuang suatu nilai pada array
@@ -61,6 +68,7 @@ let color2 =["Red", "White", "Orange", "Blue"]
 color2.splice(1,1, "Yellow", "Black"); // Artiny: Pada posisi index 1, akan dibuang 1 nilai yaitu "White" dan di tambahkan nilai "Yellow" dan "Black"
 console.log(color2.toString()); // Output: Red,Yellow,Black,Orange,Blue
 
+//  __________________________________________________________________________________________________________________________________________
 
 // 7. push()
 // Metode untuk menambahkan nilai baru pada array
@@ -69,7 +77,7 @@ console.log(color2.toString()); // Output: Red,Yellow,Black,Orange,Blue
  let angka = [0, 1, 2, 2, 3, 3]
 angka.push(11, 100, 300);
 console.log(angka.toString()) // Output: 0,1,2,2,3,3,11,100,300
- 
+// __________________________________________________________________________________________________________________________________________ 
 
 // 8. map()
 // Metode untuk melakukan iterasi objek dalam suatu array dan, dengan cara yang serupa seperti array tradisional, 
@@ -102,6 +110,7 @@ Output: [
   { Smith: 'Photography', age: 25 }
 ]
 */
+//  __________________________________________________________________________________________________________________________________________
 
 // 9. forEach()
 // Metode untuk menimbulkan metode tertentu ke seluruh array
@@ -119,7 +128,7 @@ dataA.forEach(function tampil(element, index, dataA) {
 // No ke 2
 // No ke 3
 // No ke 4
-
+//  __________________________________________________________________________________________________________________________________________
 
 // 10. split()
 // Metode untuk memisahkan string (berdasar pemisah), dan hasilnya dalam bentuk array
@@ -130,6 +139,7 @@ let text = "Saya bermain gitar";
 let newText = text.split(" "); //dipisah berdasarkan spasi
 console.log(newText); // output:[ 'Saya', 'bermain', 'gitar' ]
 console.log(newText[0]) // menampilkan text [0] yang sudah di-split berdasar spasi | output: Saya
+//  __________________________________________________________________________________________________________________________________________
 
 // 11. pop()
 // Metode untuk membuang item terakhir pada array
@@ -139,7 +149,7 @@ console.log(newText[0]) // menampilkan text [0] yang sudah di-split berdasar spa
 let name1 = ["Ana", "Ani", "Ina", "Inu"];
 name1.pop();
 console.log(name1); // ['Ana', 'Ani', 'Ina']
-
+//  __________________________________________________________________________________________________________________________________________
 
 
 

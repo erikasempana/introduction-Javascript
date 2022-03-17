@@ -15,10 +15,9 @@ function searchName(search, limit, callback){
             break;
         }
         if (callback(search, names[i])){
-            find.push(names[i]);  
+            find.push(names[i]); // dilanjutkan ke function callback untuk melihat kata pada "search" sudah sesuai pada "names", hasil akan di push ke find=[]
         }
     }
-    callback (search, limit);
     return find;
 }
 
