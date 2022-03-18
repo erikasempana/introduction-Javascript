@@ -35,6 +35,12 @@ tampilHari("senin");
 
 // TASK PROMISE (.then & .catch) & ASYNC/AWAIT (try - catch)
 
+// Untuk handling ansyncronus dapat digunakan promise .then/.catch dan asyn await (try/ catch)
+// - pada promise terdapat parameter resolve, dan reject, resolve akan menangkap hasil yang terpenuhi. sedangkan reject akan menangkap hasil error
+// - result pada resolve akan di teruskan ke then dan try untuk di eksekusi
+// - result pada reject akan di teruskan ke .catch dan catch untuk menampilkan message error
+
+// perbedaan keduanya
 // [1].then/.catch = kalau ada fungsi di dalam fungsi maka nestingnya terlalu banyak, kalau tidak di nesting maka setiap .than harus di beri .catch
 // [2] try/catch = hanya perlu mendeklarasikan fungsi di dalam try, lalu di tambahkan await untuk fungsi yang perlu di tunggu prosesnya (minim nesting)
 
