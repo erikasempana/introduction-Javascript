@@ -4,11 +4,11 @@ const cekBendaLangit = (benda) => {
         setTimeout(() => {
             const bendaLangit = ["asteroid", "awan", "bulan", "bintang", "galaksi", "komet", 
                                  "matahari", "meteor", "meteoroid", "nebula", "planet", "satelit"] 
-            let cek = bendaLangit.find((item) => {
+            let hasil = bendaLangit.find((item) => {
                 return item == benda
             })
-            if (cek){
-                resolve(cek)
+            if (hasil){
+                resolve(hasil)
             } else {
                 reject (new Error("Bukan salah satu dari benda Langit"))
             }
@@ -22,30 +22,30 @@ const tampilBenda = async (benda) => {
         console.log(resultBenda) 
     }
     catch (error){
-        console.log(Error)
+        console.log(error.message)
     }
 }
 tampilBenda("meja")
-tampilBenda("matahari")
+tampilBenda("matahari") 
 
 
 //  HANDLING DENGAN THEN CATCH
-function namaAnggota(nama){
-    return new Promise((resolve, reject) =>{
-        setTimeout(() =>{
-            const namaAnggota = ["Ana", "Ani", "Agung", "Andin"]
-            let cek = namaAnggota.find((item) =>{
-                return item === nama
-            })
-            if(cek){
-                resolve(cek)
-            } else{
-                reject (new Error("Tidak terdaftar sebagai anggota"))
-            }
-        }, 2000)
-    })
-}
+// function namaAnggota(nama){
+//     return new Promise((resolve, reject) =>{
+//         setTimeout(() =>{
+//             const namaAnggota = ["Ana", "Ani", "Agung", "Andin"]
+//             let cek = namaAnggota.find((item) =>{
+//                 return item === nama
+//             })
+//             if(cek){
+//                 resolve(cek)
+//             } else{
+//                 reject (new Error("Tidak terdaftar sebagai anggota"))
+//             }
+//         }, 2000)
+//     })
+// }
 
-namaAnggota("rangga")
-.then((Response) => console.log(Response))
-.catch((err) => console.log(err));
+// namaAnggota("ana")
+// .then((Response) => console.log(Response))
+// .catch((err) => console.log(err));

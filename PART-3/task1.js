@@ -18,7 +18,7 @@ const cekHariKerja = (day) => {
 };
 
 //a. HANDLING DENGAN THAN CATCH
-cekHariKerja("sabtu")
+cekHariKerja("senin")
   .then((response) => console.log(response))
   .catch((error) => console.log(error));
 
@@ -28,7 +28,7 @@ const tampilHari = async (day) => {
     const resultDay = await cekHariKerja(day);
     console.log(resultDay);
   } catch (error) {
-    console.log(Error);
+    console.log(error.message);
   }
 };
 tampilHari("senin");
