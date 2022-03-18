@@ -1,31 +1,30 @@
 // Declaration
-    function additional (){
-    // kondisi, loop, dan masih banyak hal lain yang bisa diterapkan
-   
-    // case 1 - Don't put return in loop  
-        for (let i = 0; i <= 5; i++){
-            console.log(i)
-            return i // karna return ada di dalam, proses looping hanya terjadi sekali
-        }
-        console.log ("Hello World!") // tidak akan terbaca, krn proses sudah berhenti di return yg ada di proses looping. 
-        }
-        additional ()
+function additional() {
+  // kondisi, loop, dan masih banyak hal lain yang bisa diterapkan
 
-    
-    // Case 2 Jika proses belum sampai benar2 selesai jangan meletakkan return
-    // const r = 7
-    // const luas = 3.14 * r * r
-    // return luas
-    // const keliling = 2 * 3.14 * r
-    // return keliling 
+  // case 1 - Don't put return in loop
+  for (let i = 0; i <= 5; i++) {
+    console.log(i);
+    return i; // karna return ada di dalam, proses looping hanya terjadi sekali
+  }
+  console.log("Hello World!"); // tidak akan terbaca, krn proses sudah berhenti di return yg ada di proses looping.
+}
+additional();
 
-    // const x = 10
-    // if (typeof x === "String") {
-    //     // console.log("Nilai Ber tipe data string")
-    //     return "Nilai Ber tipe data string"
-    // }
-    // // console.log("Nilai Bukan Bertipe String")
-    // return "Nilai Bukan Bertipe String"
+// Case 2 Jika proses belum sampai benar2 selesai jangan meletakkan return
+// const r = 7
+// const luas = 3.14 * r * r
+// return luas
+// const keliling = 2 * 3.14 * r
+// return keliling
+
+// const x = 10
+// if (typeof x === "String") {
+//     // console.log("Nilai Ber tipe data string")
+//     return "Nilai Ber tipe data string"
+// }
+// // console.log("Nilai Bukan Bertipe String")
+// return "Nilai Bukan Bertipe String"
 // }
 
 // additional()
@@ -44,21 +43,15 @@
 
 // Expression Arrow Function
 const biodata = (name, age) => {
-    console.log(`Nama Saya ${name} umur saya ${age}`)
-   }
-   
-   biodata("Bagus", 17)
-   
-   
-   
+  console.log(`Nama Saya ${name} umur saya ${age}`);
+};
+
+biodata("Bagus", 17);
 
 // Expression
-const additional = function(){
-    console.log (1 + 2)
-}
-
+const additional = function () {
+  console.log(1 + 2);
+};
 
 // Expression Arrow Function
-const additional = () => {
-    
-}
+const additional = () => {};

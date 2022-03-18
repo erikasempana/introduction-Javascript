@@ -8,8 +8,7 @@
 // }
 // console.log(biodata.fullName())
 
-
-const reverseWord = ["Saya", "Belajar", "Javascript"]
+const reverseWord = ["Saya", "Belajar", "Javascript"];
 // console.log(reverseWord.toString())
 
 // let result = ""

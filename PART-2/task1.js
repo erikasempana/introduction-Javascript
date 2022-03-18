@@ -18,7 +18,7 @@ console.log(allString); // Output: Hallo! Saya Erika. Saya belajar Javascript.
 // sintak => array.toString();
 // Ex:
 
-let abjad = ["a", "b", "c", "d"]
+let abjad = ["a", "b", "c", "d"];
 let strAbjad = abjad.toString();
 console.log(abjad); // Output: [ 'a', 'b', 'c', 'd' ]
 console.log(strAbjad); // Output: a,b,c,d
@@ -29,43 +29,43 @@ console.log(strAbjad); // Output: a,b,c,d
 // Sintak => array.join("saparator");
 // Ex:
 
-let num = [1, 2, 3, 4, 5, 6, 7]
+let num = [1, 2, 3, 4, 5, 6, 7];
 let newNum = num.join(" and ");
-console.log(newNum) // Output: 1 and 2 and 3 and 4 and 5 and 6 and 7
+console.log(newNum); // Output: 1 and 2 and 3 and 4 and 5 and 6 and 7
 //  __________________________________________________________________________________________________________________________________________
 
 // 4. reverse()
 // Metode untuk membalikkan urutan (dari belakang ke depan) nilai array
 // Sintak => array.reverse()
-// Ex: 
-let num1 = [11, 12, 13, 14, 15, 16, 17]
-let newNum1 = num1.reverse()
-console.log(newNum1) // Output: [17, 16, 15, 14, 13, 12, 11]
+// Ex:
+let num1 = [11, 12, 13, 14, 15, 16, 17];
+let newNum1 = num1.reverse();
+console.log(newNum1); // Output: [17, 16, 15, 14, 13, 12, 11]
 // __________________________________________________________________________________________________________________________________________
 
 // 5. sort()
 // Metode untuk mengurutkan nilai array sesuai abjad atau meningkat
 // Sintak => array.sort()
 // Ex:
-let numm = [1, 0, 7,4, 9, 8, 9, 2, 3, 7, 4, 6, 2, 3, 5]
-let fruits = ["grape", "banana", "apple", "strowberry"]
-let newNumm = numm.sort().toString()
-let newFruits = fruits.sort().toString()
-console.log(newNumm) // Output: 0,1,2,2,3,3,4,4,5,6,7,7,8,9,9
-console.log(newFruits) // Output: apple,banana,grape,strowberry
+let numm = [1, 0, 7, 4, 9, 8, 9, 2, 3, 7, 4, 6, 2, 3, 5];
+let fruits = ["grape", "banana", "apple", "strowberry"];
+let newNumm = numm.sort().toString();
+let newFruits = fruits.sort().toString();
+console.log(newNumm); // Output: 0,1,2,2,3,3,4,4,5,6,7,7,8,9,9
+console.log(newFruits); // Output: apple,banana,grape,strowberry
 // __________________________________________________________________________________________________________________________________________
 
 // 6. splice()
 // Metode untuk menambahkan dan membuang suatu nilai pada array
-// sintak => array.spalice (indexAdd, sumRemove, newarrayAdd1, ..., newarrayAddN) 
+// sintak => array.spalice (indexAdd, sumRemove, newarrayAdd1, ..., newarrayAddN)
 // Ex:
 
-let color = ["Red", "White", "Blue"]
+let color = ["Red", "White", "Blue"];
 color.splice(2, 1, "Orange"); // Artiny: Menambahkan nilai "Orange" pada posisi index [2] dan membuang 1 nilai pada posisi index [2} yaitu "Blue"
 console.log(color.toString()); // Output: Red,White,Orange,
 
-let color2 =["Red", "White", "Orange", "Blue"]
-color2.splice(1,1, "Yellow", "Black"); // Artiny: Pada posisi index 1, akan dibuang 1 nilai yaitu "White" dan di tambahkan nilai "Yellow" dan "Black"
+let color2 = ["Red", "White", "Orange", "Blue"];
+color2.splice(1, 1, "Yellow", "Black"); // Artiny: Pada posisi index 1, akan dibuang 1 nilai yaitu "White" dan di tambahkan nilai "Yellow" dan "Black"
 console.log(color2.toString()); // Output: Red,Yellow,Black,Orange,Blue
 
 //  __________________________________________________________________________________________________________________________________________
@@ -74,32 +74,32 @@ console.log(color2.toString()); // Output: Red,Yellow,Black,Orange,Blue
 // Metode untuk menambahkan nilai baru pada array
 // Sintak => array.push(nilaiBaru)
 // Ex:
- let angka = [0, 1, 2, 2, 3, 3]
+let angka = [0, 1, 2, 2, 3, 3];
 angka.push(11, 100, 300);
-console.log(angka.toString()) // Output: 0,1,2,2,3,3,11,100,300
-// __________________________________________________________________________________________________________________________________________ 
+console.log(angka.toString()); // Output: 0,1,2,2,3,3,11,100,300
+// __________________________________________________________________________________________________________________________________________
 
 // 8. map()
-// Metode untuk melakukan iterasi objek dalam suatu array dan, dengan cara yang serupa seperti array tradisional, 
-// memodifikasi konten dari setiap objek individu dan memberikan array yang baru. 
+// Metode untuk melakukan iterasi objek dalam suatu array dan, dengan cara yang serupa seperti array tradisional,
+// memodifikasi konten dari setiap objek individu dan memberikan array yang baru.
 // Modifikasi ini dilakukan berdasarkan apa yang dikembalikan (return) dalam "function callback"
 // Sintak => array.map(function(currentValue, index, arr), thisValue
-// Ex: 
+// Ex:
 
 const data = [
-    { name: 'Ana', hobby: 'Reading' },
-    { name: 'Jhon', hobby: 'Swimming' },
-    { name: 'Smith', hobby: 'Photography' }
-]
+  { name: "Ana", hobby: "Reading" },
+  { name: "Jhon", hobby: "Swimming" },
+  { name: "Smith", hobby: "Photography" },
+];
 
-const dataByHobby = data.map(item => {
-    const container = {};
+const dataByHobby = data.map((item) => {
+  const container = {};
 
-    container[item.name] = item.hobby;
-    container.age = item.name.length * 5;
+  container[item.name] = item.hobby;
+  container.age = item.name.length * 5;
 
-    return container;
-})
+  return container;
+});
 
 console.log(dataByHobby);
 
@@ -120,9 +120,9 @@ Output: [
 
 let dataA = [1, 2, 3, 4, 5];
 dataA.forEach(function tampil(element, index, dataA) {
-    console.log("No ke " + index)
+  console.log("No ke " + index);
 });
-// Output: 
+// Output:
 // No ke 0
 // No ke 1
 // No ke 2
@@ -138,18 +138,15 @@ dataA.forEach(function tampil(element, index, dataA) {
 let text = "Saya bermain gitar";
 let newText = text.split(" "); //dipisah berdasarkan spasi
 console.log(newText); // output:[ 'Saya', 'bermain', 'gitar' ]
-console.log(newText[0]) // menampilkan text [0] yang sudah di-split berdasar spasi | output: Saya
+console.log(newText[0]); // menampilkan text [0] yang sudah di-split berdasar spasi | output: Saya
 //  __________________________________________________________________________________________________________________________________________
 
 // 11. pop()
 // Metode untuk membuang item terakhir pada array
 // Sintak => array.pop()
-// Ex: 
+// Ex:
 
 let name1 = ["Ana", "Ani", "Ina", "Inu"];
 name1.pop();
 console.log(name1); // ['Ana', 'Ani', 'Ina']
 //  __________________________________________________________________________________________________________________________________________
-
-
-
