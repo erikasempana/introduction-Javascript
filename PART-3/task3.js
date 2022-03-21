@@ -49,3 +49,5 @@ tampilBenda("matahari")
 // namaAnggota("ana")
 // .then((Response) => console.log(Response))
 // .catch((err) => console.log(err));
+
+// TASK 3 MEMBUAT 2 FUNGCTION - PROMISE YANG DI HANDLE DENGAN TRY/CATCH DAN ATAU THEN/CATCH  
