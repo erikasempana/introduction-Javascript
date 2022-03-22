@@ -1,7 +1,7 @@
 function cekPalindrom(text) {
-  let word = text.split(" "); //split kata berdasarkan kata - untuk kondisi 1
-  let textLow = text.toLowerCase(); //smengubah ke huruf kecil
-  let splitWord = textLow.split(""); //split huruf termasuk spasi untuk kondisi 2
+  let word = text.split(" "); // split text berdasarkan kata - untuk kondisi 1
+  let textLow = text.toLowerCase(); // mengubah ke huruf kecil
+  let splitWord = textLow.split(""); // split huruf termasuk spasi untuk kondisi 2
 
   console.log("Text diubah ke huruf kecil = " + textLow);
   console.log("Memisah text per-huruf= " + splitWord);
@@ -24,3 +24,5 @@ function cekPalindrom(text) {
   }
 }
 cekPalindrom("Malam Malam");
+// cekPalindrom("Anda");
+// cekPalindrom("selamat Malam");

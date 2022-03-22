@@ -1,7 +1,7 @@
 function fazzfood(harga, voucher, jarak, pajak) {
-  let potonganHarga = "";
-  let ongkir = "";
-  let subTotal = "";
+  let potonganHarga = 0;
+  let ongkir = 0;
+  let subTotal = 0;
 
   // 1. Menghitung voucher
   if (voucher === "DITRAKTIR60") {
@@ -29,9 +29,9 @@ function fazzfood(harga, voucher, jarak, pajak) {
         potonganHarga = 50000;
       }
     } else {
-        console.log(
-            "Anda harus belanja minimal Rp 50.000 untuk menggunakan voucher ini"
-          );
+      console.log(
+        "Anda harus belanja minimal Rp 50.000 untuk menggunakan voucher ini"
+      );
     }
 
     // 2. Menghitung jarak ongkir
@@ -51,7 +51,7 @@ function fazzfood(harga, voucher, jarak, pajak) {
 
     // 4. Menghitung subtotal
     subTotal = harga - potonganHarga + ongkir + pajak;
-    
+
     // 5. Output
     console.log("Harga = Rp " + harga);
     console.log("Potongan = Rp " + potonganHarga);
@@ -61,3 +61,4 @@ function fazzfood(harga, voucher, jarak, pajak) {
   }
 }
 fazzfood(75000, "FAZZFOOD50", 5, true);
+fazzfood(25000, "DITRAKTIR60", 1, false);
